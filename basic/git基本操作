@@ -1,0 +1,20 @@
+一、git基本操作
+1、克隆仓库
+git clone url(git仓库的地址)
+2、添加还未被追踪的文件文件
+git add 文件名称或者是. (.代表了所有的文件)
+3、添加本次提交的注释信息
+git commit -m "这里是注释信息"
+4、推到远程
+git push
+5、在已有仓库中拉取远程的代码
+git pull
+
+二、添加ssh-key
+1、生成ssh-key
+    命令：ssh-keygen -t rsa -C "你的gitlab的邮箱"
+2、到个人的家目录下复制公钥内容
+    - cd ~/.ssh
+    - cat id_rsa.pub
+    复制内容到gitlab的ssh keys中（点击右上角头像--》settings--》ssh-keys--》粘贴内容到keys中，title名字任意）
+
