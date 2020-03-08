@@ -1,0 +1,143 @@
+<aiml version="1.0.1" encoding="UTF-8">
+
+
+
+
+<!--获取模糊匹配位置的关键词-->
+    <category>
+        <pattern>一个*是*吗</pattern>
+        <template>
+            <!--第一个参数是<star index="1"/>,第二个参数是<star index="2"/>-->
+            对对对，你说的对！！一个<star index="1"/>引发了血案
+        </template>
+    </category>
+
+    <!--随机标签-->
+    <!--<category>-->
+        <!--<pattern>*想*</pattern>-->
+        <!--<template>-->
+            <!--<random>-->
+                <!--&lt;!&ndash;<li>我也想你了</li>&ndash;&gt;-->
+                <!--&lt;!&ndash;<li>不要脸</li>&ndash;&gt;-->
+                <!--&lt;!&ndash;<li>上旁边想去</li>&ndash;&gt;-->
+                <!--&lt;!&ndash;<li>你想啥呢想啊</li>&ndash;&gt;-->
+                <!--<li>你想<star index="2"/>干啥啊</li>-->
+            <!--</random>-->
+        <!--</template>-->
+    <!--</category>-->
+
+<category>
+        <pattern>好 想</pattern>
+        <template>
+            <random>
+                <li>我也想你了</li>
+                <li>不要脸</li>
+                <li>上旁边想去</li>
+                <li>你想啥呢想啊</li>
+            </random>
+        </template>
+    </category>
+
+    <category>
+        <pattern>*好想*</pattern>
+        <template>
+            <srai>好想</srai>
+        </template>
+    </category>
+
+    <category>
+        <pattern>我是*</pattern>
+        <template>
+            你好啊<set name="username"><star/></set>,很高兴见到你!
+        </template>
+    </category>
+
+    <category>
+        <pattern>晚安</pattern>
+        <template>
+            美梦啊,<get name="username"/>,跟你聊天很愉快，期待下一次
+        </template>
+    </category>
+
+    <category>
+        <pattern>*明星*</pattern>
+        <template>刘德华</template>
+    </category>
+
+    <category>
+        <pattern>我也是</pattern>
+        <that>刘德华</that>
+        <template>我也喜欢他啊</template>
+    </category>
+
+
+    <category>
+        <pattern>*苹果*</pattern>
+        <template>好啊,苹果<set name="topic">公司</set>很不错哦</template>
+    </category>
+
+    <topic name="公司">
+        <category>
+            <pattern>好大哦</pattern>
+            <template>是的,好几万人呢</template>
+        </category>
+        <category>
+            <pattern>作业怎么做</pattern>
+            <template>你说啥呢,我也不知道</template>
+        </category>
+    </topic>
+
+
+    <category>
+        <pattern>*吃苹果*</pattern>
+        <template>好啊,聊聊<set name="topic">水果</set>吧</template>
+    </category>
+
+    <topic name="水果">
+        <category>
+            <pattern>好大哦</pattern>
+            <template>是啊，一口都吃不完</template>
+        </category>
+        <category>
+            <pattern>作业怎么做</pattern>
+            <template>你说啥呢,我也不知道</template>
+        </category>
+    </topic>
+
+
+    <category>
+        <pattern>我的名字是*</pattern>
+        <template>你好,欢迎来到贪心学院! <think><set name="username1"><star/></set></think></template>
+    </category>
+
+    <category>
+        <pattern>不聊了</pattern>
+        <template>
+            好啊<get name="username1"/>，下次聊
+        </template>
+    </category>
+
+
+    <category>
+        <pattern>我喜欢*</pattern>
+        <template>
+            <think>
+                <set name="s"><star/></set>
+            </think>
+            哇塞,你好
+            <condition name="s">
+                <li value="健身">帅啊</li>
+                <li value="读书">有内涵啊</li>
+                <li>牛啊</li>
+            </condition>
+        </template>
+    </category>
+
+
+
+        <category>
+            <pattern>*</pattern>
+            <template>我没太听懂哦</template>
+        </category>
+
+</aiml>
