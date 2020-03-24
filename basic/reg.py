@@ -7,7 +7,7 @@ import re
 
 s = "贪心学院的官网是http://www.greedyai123.com"
 reg = "http://[w]{3}\.[a-z0-9]*\.com"
-result = re.findall(reg,s)
+result = re.findall(reg, s)
 # print(result)
 # --------------------------------------------------
 
@@ -21,7 +21,7 @@ reg = "hello"
 . 代表的是换行符以外的任意的字符 
 \w 匹配字母或数字或下划线或汉字
 \s 匹配任意的空白符
-\d 匹配任意的数字 0-9  
+\d 匹配任意的数字 0-9
 ^ 匹配字符串的开始
 $ 匹配字符串的结束
 """
@@ -61,7 +61,7 @@ s1 = "我的qq是42197393"
 reg = "\d{5,12}"
 # print(re.findall(reg,s1))
 
-#分组匹配
+# 分组匹配
 s = "我的qq号码是:42197393, 我的邮编是:10000"
 reg = "(\d{8}).*(\d{5})"
 # print(re.findall(reg,s))
@@ -88,7 +88,7 @@ reg = "(\d{3})(\d{2})"
 s = "greedyaiiiiiii"
 # reg = "greedyai*"
 reg = "greedyai+?"
-print(re.findall(reg,s))
+print(re.findall(reg, s))
 
 """
 分之条件匹配
@@ -105,7 +105,7 @@ s3 = "0432-7842342"
 reg = "^0\d{2,3}"
 # print(re.findall(reg,s2))
 
-#零宽断言
+# 零宽断言
 """
 (?=reg)  匹配reg前边的位置
 (?<=reg)  匹配reg后边的位置
