@@ -1,7 +1,3 @@
-__author__ = "zhou"
-__date__ = "2019-05-07 20:58"
-
-
 
 class Father:
     name = "李雷"
@@ -24,7 +20,6 @@ class Mother():
 
     def speak_chinese(self):
         print("mother speak chinses")
-
 
 class Child(Father, Mother):
     # def __init__(self):
