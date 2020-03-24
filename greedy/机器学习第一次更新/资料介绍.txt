@@ -1,0 +1,30 @@
+lesson0：课表
+lesson1：开学典礼，数字类型、字符串类型
+lesson2：git的基本使用、条件判断、数组类型
+lesson3：1、set、dist、tuple类型2、Python中自定义函数及函数的基本使用递归的概念及应用
+lesson4：1、高级条件控制-循环的中断(break/continue)2、函数的返回值 3、初识正则 
+         4、AIML框架介绍5、案例讲解：利用AIML写规则，并实现简单的问答系统
+lesson5：1、正则表达式的高级应用2、聊天中的上下文理解3、AIML中的多层条件控制
+         4、AIML中的template高级教程5、利用AIML实现多伦对话 6、中文分词技术
+lesson6：1、面向对象的基本思想 2、Python的工程结构及命名规范3、面向对象的类设计 4、导包 5、快排的实现
+lesson7：1、导包 2、面向对象三大特性3、时间复杂度
+lesson8：1、闭包2、装饰器(语法糖/注解)开发 3、时间复杂度
+lesson9：1、lambda表达式与高阶函数的应用2、yield生成器3、三大推导式4、异常5、文件的操作
+lesson10：1、日志的作用与操作2、(多)进程与(多)线程
+lesson11：1、多线程作业讲解2、MySQL 数据库的创建
+lesson12：1、MySQL的查询2、索引的分类与创建3、慢查询与性能分析4、存储引擎的分类与区别 
+          5、数据库、表、字段的字符集 6、binlog开启与查看 7、数据库的5大约束
+lesson13：1、MySQL关联查询/慢查询/索引/存储引擎 2、git高级使用
+lesson14：1、虚拟环境的创建与实用2、Selenium的基本定位方法 3、Selenium的鼠标事件 4、Selenium的键盘事件
+          5、cookies操作与截图方法封装6、初识js定位
+lesson15：1、xpath定位 2、CSS选择器定位3、js定位4、requirements的作用与使用 cookies操作与截图方法封装
+lesson16：1、京东商品信息抓取并写入文件2、元素的等待3、mysql数据库的连接4、selenium的远程分布式启动
+lesson17：1、python中的元类2、面向对象思想的应用-PageObject模式3、对象关系映射(ORM)
+lesson18：1、Scrapy框架的工作流2、使用Scrapy进行爬虫开发
+lesson19：1、Flask的基本使用 2、微服务的开发理念
+lesson20：1、restful风格的理解 2、Flask与Flask-RESTful的结合使用3、uwsgi部署
+lesson21：1、anaconda环境安装 2、jupyter环境安装3、NumPy的嵌套序列4、定长数组 
+          5、矢量化6、花式索引7、数组转置和轴对换 8、使用Numpy进行简单数据处理
+lesson22：pandas
+lesson23：数学
+lesson24：机器学习介绍

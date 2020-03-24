@@ -1,0 +1,5 @@
+lesson25：线性回归
+lesson26：逻辑回归
+lesson27：朴素贝叶斯
+lesson28：KNN
+lesson29：SVM

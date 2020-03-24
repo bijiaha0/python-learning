@@ -1,0 +1,21 @@
+场景描述：
+    有一个馒头店，生产馒头，每天销售
+    有一个生产者，就是馒头店老板，不停的生产馒头，但是当库存充足的时候就不生产了，等待消费
+    
+    有一个消费者，去消费馒头，当没有馒头了就不能消费了。 
+    
+import threading
+
+# 先自学的知识
+# 用到threading.Condition()
+# condition.wait()
+# condition.notify()
+# 这里边需要用到全局变量  global修饰这个变量  这个变量就是馒头，或者是商品products
+
+class Produce(Thread):
+    def run():
+        pass
+    
+class Consumer(Thread):
+    def run():
+        pass
