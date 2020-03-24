@@ -1,8 +1,5 @@
-__author__ = "zhou"
-__date__ = "2019-05-07 21:29"
 
 from abc import ABCMeta, abstractmethod
-
 
 class Tester(metaclass=ABCMeta):
 
@@ -11,14 +8,8 @@ class Tester(metaclass=ABCMeta):
         pass
 
 class FunctionTester(Tester):
-    # def test(self):
-    #     print("功能测试")
-    pass
+    def test(self):
+        print("功能测试")
 
 f = FunctionTester()
 # f.test()
-
-
-
-
-

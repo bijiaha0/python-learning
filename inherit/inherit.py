@@ -21,6 +21,7 @@ class Mother():
     def speak_chinese(self):
         print("mother speak chinses")
 
+
 class Child(Father, Mother):
     # def __init__(self):
     #     print("Child构造函数运行")

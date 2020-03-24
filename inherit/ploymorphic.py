@@ -1,15 +1,11 @@
 from abc import ABCMeta, abstractmethod
 
-__author__ = "zhou"
-__date__ = "2019-05-07 21:52"
-
 """
 多态
 多态指的是一类事物有多种形态
 
 多态性
 """
-
 
 class Animal:
     def run(self):
@@ -84,7 +80,6 @@ c = Computer()
 
 # 我买了一个电脑
 computer = ThinkPad()
-
 
 # 我买了一个鼠标
 m = Mouse()
