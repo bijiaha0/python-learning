@@ -108,9 +108,7 @@ def combo_args(function_name):
 def function_demo5(*args, **kwargs):
     pass
 
-
 # function_demo5(1, 2, name="aaa", age=10, address="北京")
-
 
 def max_runtime(timeout):
     def out_warpper(function_name):
