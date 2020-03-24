@@ -118,6 +118,3 @@ s = "hellogreedyailoove"
 # print(re.findall(reg,s))
 reg = "(?<=greedyai)[a-z]*"
 # print(re.findall(reg,s))
-
-
-

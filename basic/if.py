@@ -1,9 +1,5 @@
-__author__ = "zhou"
-__date__ = "2019-04-18 21:01"
-
 if False:
     print("True")
-
 elif True:
     print("elif")
 else:
@@ -18,7 +14,6 @@ else:
 >=
 <=
 !=
-
 """
 
 if 1 == 2:
@@ -62,7 +57,6 @@ not in
 print("a" in "ab")
 print("a" not in "ab")
 
-
 """
 and
 or
@@ -85,10 +79,3 @@ b = a
 c = [1,2,3]
 print(a is b)
 print(a is not b)
-
-
-
-
-
-
-

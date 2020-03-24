@@ -17,7 +17,9 @@ set数据类型的特点: 无序的不重复元素的序列
 a = set("abcd")
 print(a)
 # b = set("aqwe")
+# 并集
 # print(a | b)
+# 交集
 # print(a & b)
 
 # 集合的CRUD
@@ -35,8 +37,6 @@ print(my_set)
 print(len(my_set))
 my_set.clear()
 print(my_set)
-
-
 
 my_set = set(("tony", "jack", "robbin"))
 print(my_set)

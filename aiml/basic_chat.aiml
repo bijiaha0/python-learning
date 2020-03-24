@@ -1,8 +1,5 @@
 <aiml version="1.0.1" encoding="UTF-8">
 
-
-
-
 <!--获取模糊匹配位置的关键词-->
     <category>
         <pattern>一个*是*吗</pattern>
@@ -70,7 +67,6 @@
         <template>我也喜欢他啊</template>
     </category>
 
-
     <category>
         <pattern>*苹果*</pattern>
         <template>好啊,苹果<set name="topic">公司</set>很不错哦</template>
@@ -86,7 +82,6 @@
             <template>你说啥呢,我也不知道</template>
         </category>
     </topic>
-
 
     <category>
         <pattern>*吃苹果*</pattern>
@@ -104,7 +99,6 @@
         </category>
     </topic>
 
-
     <category>
         <pattern>我的名字是*</pattern>
         <template>你好,欢迎来到贪心学院! <think><set name="username1"><star/></set></think></template>
@@ -116,7 +110,6 @@
             好啊<get name="username1"/>，下次聊
         </template>
     </category>
-
 
     <category>
         <pattern>我喜欢*</pattern>
@@ -132,8 +125,6 @@
             </condition>
         </template>
     </category>
-
-
 
         <category>
             <pattern>*</pattern>

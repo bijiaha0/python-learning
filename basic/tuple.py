@@ -10,14 +10,14 @@ tuple元组 : ()
 # t = ("1")
 #t = () # 声明一个空的元组
 # t = (1,"2")
-# t = (1,)
-# print(t)
+t = (1,)
+print(t)
 # print(type(t))
 #
-# t = (1, 2, 3, 4, 5)
-# print(t)
-# print(type(t))
-# print(t[1])
+t = (1, 2, 3, 4, 5)
+print(t)
+print(type(t))
+print(t[1])
 # t[1] = 6  这一行代码会报错，不让修改
 l = ["a",'b']
 t = (1, 2, 3, 4, l)
