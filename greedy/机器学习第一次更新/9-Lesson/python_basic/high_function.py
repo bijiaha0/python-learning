@@ -16,12 +16,10 @@ print(map_demo)
 print(list(map_demo))
 print(list(map(str, [1, 2, 3, 4])))
 
-
 # reduce函数
 from functools import reduce
 r = reduce(lambda x, y: x+y, [1, 2, 3, 4], 10)
 print(r)
-
 
 # filter函数
 print(list(filter(lambda x: x % 2 == 1, [1, 2, 3, 4, 5, 6, 7, 8])))
