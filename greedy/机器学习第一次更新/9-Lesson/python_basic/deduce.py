@@ -9,7 +9,6 @@ def qsort(my_list):
     if len(my_list) <= 1: return my_list
     return qsort([left_list for left_list in my_list[1:] if left_list < my_list[0]]) + my_list[0:1] + qsort([right_list for right_list in my_list[1:] if right_list >= my_list[0]])
 
-
 def quick_sort(my_list):
     if len(my_list) <= 1:
         return my_list
