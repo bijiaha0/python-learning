@@ -4,10 +4,8 @@ __date__ = "2019-05-16 20:32"
 import threading
 import time
 
-
 condition = threading.Condition()
 products = 0
-
 
 class Producer(threading.Thread):
     def run(self):
@@ -24,7 +22,6 @@ class Producer(threading.Thread):
                 condition.release()
                 time.sleep(2)
 
-
 class Consumer(threading.Thread):
     def run(self):
         global condition, products
@@ -40,7 +37,6 @@ class Consumer(threading.Thread):
                 condition.release()
                 time.sleep(2)
 
-
 if __name__ == "__main__":
     for i in range(3):
         p = Producer()
@@ -49,6 +45,3 @@ if __name__ == "__main__":
     for i in range(2):
         c = Consumer()
         c.start()
-
-
-

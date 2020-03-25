@@ -1,13 +1,8 @@
-__author__ = "zhou"
-__date__ = "2019-05-14 21:59"
-
 # 事件 (Event)
 """
 线程间的通信
 """
 import threading, time
-
-
 
 class Boss(threading.Thread):
     def run(self):
@@ -19,6 +14,7 @@ class Boss(threading.Thread):
         print("BOSS: 大家干完了，以后就不996啦！！！！")
         print(event.isSet())
         event.set()
+
 class Worker(threading.Thread):
     def run(self):
         event.wait()
@@ -26,7 +22,6 @@ class Worker(threading.Thread):
         event.clear()
         event.wait()
         print("Worker: Oh Yeah !!!!!!")
-
 
 if __name__ == "__main__":
     event = threading.Event()

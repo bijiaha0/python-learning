@@ -1,6 +1,3 @@
-__author__ = "zhou"
-__date__ = "2019-05-14 20:32"
-
 import logging
 
 # 1、debug 调试级别的日志
@@ -22,7 +19,7 @@ import logging
 # logging.info("This is a info log")
 # logging.warning("This is a warning log")
 # logging.error("This is a error log")
-#
+
 
 LOG_FORMAT = "%(asctime)s - %(levelname)s - %(message)s"
 DATE_FORMAT = "%Y/%m/%d %H:%M:%S"
@@ -32,6 +29,7 @@ logger.setLevel("DEBUG")
 
 # 文件处理器，输入到文件
 file_handler = logging.FileHandler("all_greeyai.log", mode='a', encoding="UTF-8")
+
 # 流处理器，控制输入到控制台
 steam_handler = logging.StreamHandler()
 
@@ -45,7 +43,6 @@ logger.addHandler(steam_handler)
 logger.addHandler(error_handler)
 
 # 格式化
-
 formatter = logging.Formatter(fmt="%(asctime)s - %(levelname)s - %(message)s",datefmt="%Y/%m/%d %H:%M:%S")
 
 # 设置格式化器。 需要针对每一个处理器进行分别设置

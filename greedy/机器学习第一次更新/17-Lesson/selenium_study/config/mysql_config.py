@@ -1,5 +1,3 @@
-__author__ = "zhou"
-__date__ = "2019-06-01 21:43"
 
 def set_mysql_config(environment):
     if environment == "dev":

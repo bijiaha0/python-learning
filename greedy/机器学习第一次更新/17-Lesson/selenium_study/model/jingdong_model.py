@@ -1,9 +1,6 @@
 from orm.field import Field
 from orm.mysql_orm import Model
 
-__author__ = "zhou"
-__date__ = "2019-06-01 21:56"
-
 class Goods(Model):
     computer_part_name = Field('computer_part_name', 'varchar(200)')
     computer_info = Field("computer_info", "text")

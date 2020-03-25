@@ -1,7 +1,3 @@
-__author__ = "zhou"
-__date__ = "2019-05-11 21:29"
-
-
 """
 什么是异常?
 运行的时候发生了错误，其实是代码抛出了一个错误
@@ -14,7 +10,7 @@ except 异常名字
 else:
     代码块
 """
-#
+
 # try:
 #     file = open("aaaa", "r")
 #     # i = 1
@@ -23,8 +19,6 @@ else:
 # else:
 #     print("没有发生异常")
 
-
-#
 # try:
 #     file = open("aaaa", "r")
 #     # i = 1
@@ -33,8 +27,7 @@ else:
 #     print(e)
 # else:
 #     print("没有发生异常")
-#
-#
+
 # try:
 #     file = open("aaaa", "r")
 #     # i = 1
@@ -55,9 +48,6 @@ else:
 你能处理的你再捕获，不能处理的就直接抛出去
 """
 
-
-
-#
 # try:
 #     # file = open("aaaa", "r")
 #     i = 1
@@ -74,13 +64,11 @@ else:
 # finally:
 #     print("这个无论如何都会被打印，也就是说这个代码块无论如何都会被执行")
 
-
 # 手动抛出异常
 # try:
 #     raise Exception("手动抛出一个异常")
 # except:
 #     print("捕获了一个异常")
-
 
 # 自定义异常
 class MyDefineError(BaseException):
@@ -90,7 +78,3 @@ try:
     raise MyDefineError("抛出去一个自己定义的异常")
 except MyDefineError as e:
     print(e)
-
-
-
-

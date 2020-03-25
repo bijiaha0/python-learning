@@ -1,19 +1,16 @@
-__author__ = "zhou"
-__date__ = "2019-05-14 21:16"
-
 import threading
 import time
 import random
 
 num = 10000
 
-
 def my_print(info):
-    # time.sleep(random.randint(1,10))
+    time.sleep(random.randint(1,10))
     print("执行事件" + info)
     global num
     num = num - 1
     print(num)
+
 if __name__ == "__main__":
     t1 = threading.Thread(target=my_print, args=("线程1", ))
     t2 = threading.Thread(target=my_print, args=("线程2", ))
@@ -28,8 +25,4 @@ if __name__ == "__main__":
     t5.start()
 
     print("do something")
-
-
-
-
 

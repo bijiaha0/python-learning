@@ -1,12 +1,10 @@
-__author__ = "zhou"
-__date__ = "2019-05-14 21:53"
 import os
-
 
 # 导入线程
 from threading import Thread
 # 导入进程
 from multiprocessing import Process
+
 def work():
     print(os.getpid())
 
@@ -24,8 +22,3 @@ if __name__ == "__main__":
     p1.start()
     p2.start()
     print("主进程-----》线程 PID", os.getpid())
-
-
-
-
-

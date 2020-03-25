@@ -13,7 +13,6 @@ mutexB = Lock()
 mutexA = RLock()
 mutexB = RLock()
 
-
 class House(Thread):
     def run(self):
         self.room1()
@@ -28,8 +27,6 @@ class House(Thread):
         print(currentThread().name + "房间1释放B锁")
         mutexA.release()
         print(currentThread().name + "房间1释放A锁")
-
-
 
     def room2(self):
         mutexB.acquire()
