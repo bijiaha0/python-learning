@@ -1,0 +1,93 @@
+git clone http
+git checkout -b my-branch-1
+git checkout master
+
+git add .
+git commit -m "init"
+git push --set-upstream origin my-branch-1
+
+git status
+
+# 查看分支
+git branch -a
+
+# 同步远程的信息
+git fetch
+
+# 合并 和 推送
+git merge my-branch-2
+git add .
+git commit -m "merge branch 2"
+git push
+
+# 删除本地分支
+git branch -d my-branch-3
+# 删除远程分支
+git push origin --delete my-branch-3
+
+# 查看日志
+git reflog
+
+git log
+
+# 回退到上一个版本
+git reset --hard HEAD^
+
+#指定版本回退
+git reset --hard commitId
+
+# 文件存暂存区
+git stash
+
+git pull
+# 文件从暂存区拿出来
+git stash pop
+git stash apply stash@{1}
+
+# 文件冲突了，手动解决
+
+
+git add .
+git commit -m "解决冲突"
+git push
+
+# 查看暂存区
+git stash list
+
+# 清空暂存区
+git stash clear
+
+# 打标签
+git tag -a v1 -m "my version 1"
+
+git push origin v1
+
+# 查看tag
+git tag
+git show v1
+
+# 删除本地tag
+git tag -d v1
+
+# 工作目录和git仓库的比较
+git diff HEAD test-file1
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
