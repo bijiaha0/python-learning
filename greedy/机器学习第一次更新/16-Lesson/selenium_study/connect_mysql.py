@@ -1,6 +1,3 @@
-__author__ = "zhou"
-__date__ = "2019-05-30 22:04"
-
 
 import pymysql.cursors
 

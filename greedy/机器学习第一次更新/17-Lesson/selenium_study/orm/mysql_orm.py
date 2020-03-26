@@ -1,13 +1,9 @@
 from orm.field import Field
 from utils.mysql_database import create_pool
 
-__author__ = "zhou"
-__date__ = "2019-06-01 21:12"
-
 """
 ORM:对象关系映射
 """
-
 
 class ModelMetaClass(type):
     def __new__(cls, table_name, bases, attrs):

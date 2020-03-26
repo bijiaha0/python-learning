@@ -1,5 +1,3 @@
-__author__ = "zhou"
-__date__ = "2019-05-30 21:56"
 
 from selenium import webdriver
 driver = webdriver.Chrome("/workspace/greedy_ai/python_and_ai/chromedriver")

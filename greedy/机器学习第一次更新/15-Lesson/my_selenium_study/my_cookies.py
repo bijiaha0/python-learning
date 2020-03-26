@@ -1,12 +1,8 @@
 import json
 
-__author__ = "zhou"
-__date__ = "2019-05-28 20:35"
-
 from selenium import webdriver
 import time
 import os
-
 
 driver = webdriver.Chrome("/workspace/greedy_ai/python_and_ai/chromedriver")
 
@@ -33,10 +29,6 @@ def save_cookies(driver):
     with open(file_path + "jd.cookies", "w") as c:
         json.dump(cookies, c)
     print(cookies)
-
-
-
-
 
 def get_url_with_cookies():
     project_path = os.path.dirname(os.getcwd())

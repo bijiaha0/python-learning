@@ -1,5 +1,3 @@
-__author__ = "zhou"
-__date__ = "2019-05-30 22:26"
 
 # 证明两个ip地址是通的，用ping idaddress
 # 证明请求地址中的端口号是通的，用telnet ip port

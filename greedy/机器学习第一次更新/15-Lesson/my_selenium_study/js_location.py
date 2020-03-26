@@ -1,6 +1,3 @@
-__author__ = "zhou"
-__date__ = "2019-05-28 21:08"
-
 from selenium import webdriver
 import time
 
@@ -9,7 +6,9 @@ def search_12306():
     driver.get("https://www.12306.cn/index/")
     from_element = driver.find_element_by_id("fromStationText")
     time.sleep(2)
+
     from_element.click()
+
     time.sleep(2)
     from_element.send_keys("北京")
     time.sleep(2)
@@ -34,6 +33,7 @@ def search_12306():
     driver.find_element_by_class_name("form-label").click()
     time.sleep(2)
     driver.find_element_by_id("search_one").click()
+
 search_12306()
 
 
